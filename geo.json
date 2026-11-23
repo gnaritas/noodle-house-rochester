@@ -1,0 +1,12 @@
+{
+  "site": "noodle-house-rochester",
+  "recorded": "2026-11-22",
+  "purpose": "source for JSON-LD geo in build_pages.py",
+  "chosen": {"lat": 44.02003, "lon": -92.46295},
+  "method": "US Census onelineaddress geocoder (44.0200504,-92.4629565, TIGER 300-block S BROADWAY AVE) cross-checked with OSM Nominatim (44.0200272,-92.4629226, '332 South Broadway Avenue'); rounded to the corner lot both put at Broadway Ave S & 4th St SE. curl 2026-11-22.",
+  "cross_checks": [
+    {"source": "OSM Nominatim 332 South Broadway Avenue", "lat": 44.0200272, "lon": -92.4629226, "note": "agrees within ~30 m"},
+    {"source": "Google keyless output=embed curl (Chrome UA, 2026-11-22)", "note": "returned consent/interstitial shell only (2.3 KB), no coordinate state captured — the live iframe renders q= server-side anyway; point chosen from two agreeing independent sources"}
+  ],
+  "caveat": "Owners publish 332 Broadway Ave S on their own FB About tab; the Post Bulletin calls the Kelley Building 'at 330 S. Broadway' (building address) — corner is the same lot, MAP embed uses the owners' own number."
+}

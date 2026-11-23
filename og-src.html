@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>og source</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:630px;overflow:hidden;background:#231409;color:#f7f0e2;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .board{position:relative;width:1200px;height:630px;padding:64px 70px;display:flex;flex-direction:column;justify-content:space-between}
+  .steam{position:absolute;right:36px;top:26px;width:340px;height:340px;color:#bf3b22;opacity:.5}
+  .eyebrow{font:700 19px/1.4 system-ui;letter-spacing:.22em;text-transform:uppercase;color:#b3852c}
+  h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:88px;line-height:1.02;font-weight:700;margin-top:20px}
+  .tag{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-style:italic;font-size:33px;color:rgba(247,240,226,.85);margin-top:18px}
+  .dishes{margin-top:26px;font:700 21px/1 system-ui;letter-spacing:.14em;text-transform:uppercase;color:#231409}
+  .dishes span{display:inline-block;background:#b3852c;border-radius:999px;padding:12px 20px;margin-right:12px}
+  .foot{position:relative;border-top:2px solid rgba(247,240,226,.22);padding-top:24px;
+    font-size:22px;color:rgba(247,240,226,.85);display:flex;justify-content:space-between;align-items:center}
+  .foot .bowl{width:44px;height:44px;color:#b3852c;margin-right:16px;flex:none}
+  .foot address{font-style:normal;line-height:1.5}
+  .foot .tel{font-weight:700;color:#f7f0e2}
+</style>
+</head>
+<body>
+<div class="board">
+  <svg class="steam" viewBox="0 0 210 210" aria-hidden="true">
+    <path d="M70 195c0-40 34-40 34-78s-26-38-26-70" fill="none" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M112 202c0-34 28-34 28-66s-22-32-22-58" fill="none" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M150 190c0-28 22-28 22-54s-16-26-16-48" fill="none" stroke-width="2.4" stroke-linecap="round"/>
+  </svg>
+  <div>
+    <p class="eyebrow">Downtown Rochester, MN &middot; The Kelley Building &middot; Est. 2026</p>
+    <h1>The Noodle House</h1>
+    <p class="tag">Rochester&rsquo;s new home for noodles.</p>
+    <p class="dishes"><span>Pho</span><span>Ramen</span><span>Khao Soi</span><span>Karaage</span></p>
+  </div>
+  <div class="foot">
+    <div style="display:flex;align-items:center">
+      <svg class="bowl" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 11.5h19a9.5 9.5 0 0 1-19 0z" fill="currentColor"/><path d="M1.8 20.8h20.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8.6 8.2c0-2.2 2.8-2.2 2.8-4.4M12.9 8.2c0-2.2 2.8-2.2 2.8-4.4" fill="none" stroke="#bf3b22" stroke-width="2" stroke-linecap="round"/></svg>
+      <address>332 Broadway Ave S, Rochester, MN 55904 &middot; corner of Broadway &amp; 4th Street SE</address>
+    </div>
+    <p class="tel">(507) 206-0577</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "noodle-house-rochester",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Noodle House Rochester \u2014 lane-built site (websites desk, t_b9217573)",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

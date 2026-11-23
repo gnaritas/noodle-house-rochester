@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /thanks
+Disallow: /404
+
+Sitemap: https://noodle-house-rochester-demo.up.railway.app/sitemap.xml
