@@ -726,7 +726,7 @@ PAGES = [
      ld_webpage("/visit", [breadcrumb([("Home", "/"), ("Visit", "/visit")])])),
     ("/contact", "contact.html", CONTACT,
      ld_webpage("/contact", [breadcrumb([("Home", "/"), ("Contact", "/contact")])])),
-    ("/privacy", "privacy.html", PRIVACY, None),
+    ("/privacy", "privacy.html", PRIVACY, ld_webpage("/privacy")),
     ("/thanks", "thanks.html", THANKS, None),
     ("/404", "404.html", NOTFOUND, None),
 ]
@@ -740,7 +740,7 @@ for path, fname, body_html, ld_html in PAGES:
         f.write(doc)
 
 urls = "\n".join(
-    f'<url><loc>{ORIGIN}{("" if p == "/" else p)}</loc><lastmod>2026-11-22</lastmod></url>'
+    f'<url><loc>{ORIGIN}{("/" if p == "/" else p)}</loc><lastmod>2026-11-22</lastmod></url>'
     for p in ["/", "/menu", "/bowls", "/wok-fried", "/our-story", "/visit", "/contact", "/privacy"])
 sitemap = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "\n</urlset>\n")
